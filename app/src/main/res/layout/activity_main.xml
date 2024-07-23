@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Header Text-->
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/headingCalc"
+        android:textColor="@color/textColorWhite"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Operand 1-->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center_vertical"
+        android:text="@string/number1Calc"
+        android:textColor="@color/textColorWhite"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_text" />
+
+    <EditText
+        android:id="@+id/number_1"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/number1CalcHint"
+        android:textColor="@color/textColorWhite"
+        android:inputType="number"
+        android:textColorHint="@color/textColorWhite50"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_text" />
+
+    <!--Operand 2-->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:gravity="center_vertical"
+        android:text="@string/number2Calc"
+        android:textColor="@color/textColorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="0.282" />
+
+
+    <!--Button-->
+
+    <EditText
+        android:id="@+id/number_2"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="28dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/number2CalcHint"
+        android:textColor="@color/textColorWhite"
+        android:inputType="number"
+        android:textColorHint="@color/textColorWhite50"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_1"
+        app:layout_constraintVertical_bias="0.282" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="139dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="250dp"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/addBtnText"
+        android:textColor="@color/textColorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="139dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="250dp"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/subBtnText"
+        android:textColor="@color/textColorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_1" />
+
+    <Button
+        android:id="@+id/btnMult"
+        android:layout_width="139dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="212dp"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/multBtnText"
+        android:textColor="@color/textColorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="139dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="212dp"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/divBtnText"
+        android:textColor="@color/textColorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSub" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="140dp"
+        android:gravity="center"
+        android:text="@string/resultLabelText"
+        android:textColor="@color/textColorWhite"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sumValue"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sumValue"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="140dp"
+        android:gravity="center"
+        android:textColor="@color/textColorWhite"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/result" />
+
+    <Button
+        android:id="@+id/nextPageQ2"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/goToQ2"
+        android:textColor="@color/textColorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

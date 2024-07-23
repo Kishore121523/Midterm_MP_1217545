@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Midterm_1217545</string>
+
+    <string name="headingCalc">Simple Calculator</string>
+    <string name="number1Calc">Enter Number 1</string>
+    <string name="number2Calc">Enter Number 2</string>
+    <string name="number1CalcHint">Num 1</string>
+    <string name="number2CalcHint">Num 2</string>
+    <string name="addBtnText">Add</string>
+    <string name="subBtnText">Subtract</string>
+    <string name="multBtnText">Multiply</string>
+    <string name="divBtnText">Division</string>
+    <string name="resultLabelText">Result</string>
+    <string name="goToQ2">Enter user details</string>
+
+    <!-- First time user details page -->
+    <string name="q2_Heading">Enter your details</string>
+    <string name="q2_FName">First Name</string>
+    <string name="q2_LName">Last Name</string>
+    <string name="q2_DOB">Date of Birth</string>
+    <string name="q2_Phone">Contact Number</string>
+    <string name="q2_BloodGroup">Blood Group</string>
+    <string name="q2_City">City</string>
+    <string name="q2_Province">Province</string>
+    <string name="q2_Country">Country</string>
+    <string name="q2_goToQ3">Display User Details</string>
+
+    <string name="thirdPageTitle">User Details</string>
+    <string name="thirdPageBtn">Add More Users</string>
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <color name="backgroundColor">#222222</color>
+    <color name="backgroundColorLight">#3C3B3B</color>
+    <color name="textColorWhite">#E4E4E4</color>
+    <color name="textColorWhite50">#80E4E4E4</color>
+    <color name="btnColor">#AA4424</color>
+</resources>
